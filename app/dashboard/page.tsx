@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { useAppKit } from '@reown/appkit/react';
 import { useAccount } from 'wagmi';
 import {
   Wallet,
@@ -127,7 +127,7 @@ export default function DashboardPage() {
           <p className="text-gray-600 mb-8">
             Connect your wallet to view your personalized crypto insights
           </p>
-          <ConnectButton />
+          <appkit-button />
         </div>
       </div>
     );
@@ -157,7 +157,7 @@ export default function DashboardPage() {
                 <MessageSquare className="w-4 h-4" />
                 AI Chat
               </button>
-              <ConnectButton />
+              <appkit-button />
             </div>
           </div>
         </div>
